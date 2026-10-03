@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tip-calculator"
+version = "0.1.0"
+description = "A beginner-friendly console app that splits a restaurant bill with a tip."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+tip-calculator = "tip_calculator.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
